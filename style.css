@@ -1,6 +1,3 @@
-/* font-family: 'Inter', sans-serif;
-font-family: 'Lexend Deca', sans-serif; */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,10 +8,82 @@ font-family: 'Lexend Deca', sans-serif; */
     font-size: 62.5%;
 
     --main-bg-dark-blue: hsl(233, 47%, 7%);
-    --carg-bg-desaturated-blue: hsl(244, 38%, 16%);
+    --card-bg-desaturated-blue: hsl(244, 38%, 16%);
     --soft-violet: hsl(277, 64%, 61%);
+    --soft-violet-overlay: hsla(277, 64%, 61%, 0.6);
     
     --white: hsl(0, 0%, 100%);
     --transparent-white: hsla(0, 0%, 100%, 0.75);
     --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin: 0 1.6rem;
+    background-color: var(--main-bg-dark-blue);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.5rem;
+}
+
+#app {
+    background-color: var(--card-bg-desaturated-blue);
+    border-radius: 1.2rem;
+}
+
+h1, h2 {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--transparent-white);
+}
+
+h1 span {
+    color: var(--soft-violet);
+}
+
+.card-img {
+    background-image: url(./images/image-header-mobile.jpg);
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    border-top-right-radius: 1.2rem;
+    border-top-left-radius: 1.2rem;
+    position: relative;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    text-align: center;
+    margin: 3.2rem 2.4rem;
+}
+
+p {
+    color: var(--slightly-transparent-white);
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+
+.content-stats {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.companies, .templates, .queries {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    letter-spacing: .2rem;
 }
