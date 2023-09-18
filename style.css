@@ -10,7 +10,7 @@
     --main-bg-dark-blue: hsl(233, 47%, 7%);
     --card-bg-desaturated-blue: hsl(244, 38%, 16%);
     --soft-violet: hsl(277, 64%, 61%);
-    --soft-violet: hsla(277, 64%, 61%, 0.5);
+    --soft-purple-overlay: hsla(277, 91%, 56%, 0.5);
     
     --white: hsl(0, 0%, 100%);
     --transparent-white: hsla(0, 0%, 100%, 0.75);
@@ -50,7 +50,7 @@ h1 span {
 }
 
 .card-img {
-    background-image: linear-gradient(transparent, var(--soft-violet)),  url(./images/image-header-mobile.jpg);
+    background-image: linear-gradient(to bottom, var(--soft-purple-overlay), var(--soft-purple-overlay)),  url(./images/image-header-mobile.jpg);
     background-repeat: none;
     background-size: cover;
     width: 100%;
